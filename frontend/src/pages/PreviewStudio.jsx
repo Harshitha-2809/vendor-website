@@ -35,7 +35,7 @@ export default function PreviewStudio() {
   const [device, setDevice] = useState('desktop');
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:5000/api/vendors/${shopname}`)
+    fetch(`https://vendor-website-fjrx.onrender.com/api/vendors/${shopname}`)
       .then(res => res.json())
       .then(data => { setVendorData(data); setLoading(false); })
       .catch(console.error);
@@ -46,7 +46,7 @@ export default function PreviewStudio() {
     const updated = { ...vendorData, templateId: newId };
     setVendorData(updated);
     
-    await fetch('http://127.0.0.1:5000/api/vendors/save-draft', {
+    await fetch('https://vendor-website-fjrx.onrender.com/api/vendors/save-draft', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(updated)
@@ -56,7 +56,7 @@ export default function PreviewStudio() {
   const handlePublish = async () => {
     setPublishing(true);
     try {
-      const res = await fetch(`http://127.0.0.1:5000/api/vendors/publish/${shopname}`, { method: 'POST' });
+      const res = await fetch(`https://vendor-website-fjrx.onrender.com/api/vendors/publish/${shopname}`, { method: 'POST' });
       if (!res.ok) throw new Error("Publish failed");
       navigate(`/publish/${shopname}`);
     } catch(err) {

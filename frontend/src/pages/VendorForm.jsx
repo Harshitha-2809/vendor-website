@@ -43,7 +43,7 @@ export default function VendorForm() {
 
   useEffect(() => {
     if (editSlug) {
-      fetch(`http://127.0.0.1:5000/api/vendors/${editSlug}`)
+      fetch(`https://vendor-website-fjrx.onrender.com/api/vendors/${editSlug}`)
         .then(res => res.json())
         .then(data => { if(data.shopName) setFormData(data); })
         .catch(console.error);
@@ -60,7 +60,7 @@ export default function VendorForm() {
   const handleSaveDraft = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://127.0.0.1:5000/api/vendors/save-draft', {
+      const res = await fetch('https://vendor-website-fjrx.onrender.com/api/vendors/save-draft', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

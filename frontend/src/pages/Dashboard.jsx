@@ -8,7 +8,7 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/vendors')
+    fetch('https://vendor-website-fjrx.onrender.com/api/vendors')
       .then(res => res.json())
       .then(data => {
         setVendors(Array.isArray(data) ? data : []);

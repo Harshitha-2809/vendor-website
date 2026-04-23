@@ -34,7 +34,7 @@ export default function VendorSite() {
   useEffect(() => {
     const fetchVendorData = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/vendors/${shopname}`);
+        const res = await fetch(`https://vendor-website-fjrx.onrender.com/api/vendors/${shopname}`);
         if (!res.ok) {
           throw new Error('Vendor not found');
         }
