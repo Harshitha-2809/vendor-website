@@ -1,0 +1,44 @@
+[
+  {
+    "shopName": "Hrishi's Bakery",
+    "description": "Hrishi’s Bakery offers freshly baked breads, cakes, pastries, cookies, and custom celebration treats made with premium ingredients and love. Our website helps customers explore the menu, view special offers, and easily place orders through WhatsApp for quick and convenient service.",
+    "phoneNumber": "7993513739",
+    "address": "111,Ring Road,Vizianagaram",
+    "category": "Bakery",
+    "templateId": "1",
+    "imageUrl": "/images/bakery-banner.png",
+    "slug": "hrishi-s-bakery",
+    "createdAt": "2026-04-03T14:11:37.780Z",
+    "status": "published",
+    "updatedAt": "2026-04-03T14:11:37.780Z",
+    "publishedAt": "2026-04-03T14:12:49.528Z",
+    "menuItems": "Cakes,pastries,Cookies",
+    "openingTime": "08:00",
+    "closingTime": "21:00"
+  },
+  {
+    "shopName": "Harshitha's Bakery",
+    "description": "Harrshitha's Bakery offers freshly baked breads, cakes, pastries, cookies, and custom celebration treats made with premium ingredients and love. Our website helps customers explore the menu, view special offers, and easily place orders through WhatsApp for quick and convenient service.",
+    "phoneNumber": "7993513739",
+    "address": "111,Ring Road,Vizianagaram",
+    "category": "Bakery",
+    "templateId": "1",
+    "imageUrl": "/images/bakery-banner.png",
+    "slug": "harshitha-s-bakery",
+    "createdAt": "2026-03-31T17:34:55.797Z"
+  },
+  {
+    "shopName": "Jetski Shop",
+    "description": "Amazing bakery for all.",
+    "phoneNumber": "1234567890",
+    "address": "San Francisco, CA",
+    "category": "Bakery",
+    "templateId": "1",
+    "imageUrl": "/images/bakery-banner.png",
+    "slug": "jetski-shop",
+    "status": "published",
+    "createdAt": "2026-04-01T18:58:02.818Z",
+    "updatedAt": "2026-04-01T18:58:02.818Z",
+    "publishedAt": "2026-04-01T18:58:11.036Z"
+  }
+]
